@@ -1,3 +1,5 @@
+
+/* global stile */
 *,
 *::before,
 *::after {
@@ -43,6 +45,20 @@ ul,
 ol {
     list-style-type: none;
 }
+/* end global stile */
+/* heder */
+.top-line {
+    border-bottom: 1px solid var(--CORNFLOWER);
+}
+
+.container-top-line {
+display: flex;
+}
+
+.heder-nav {
+    display: flex;
+    align-items: center;
+}
 
 .container {
     max-width:
@@ -58,12 +74,16 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--IRIS);
 text-decoration: none;
+margin-right: 76px;
 }
 
 .logo-studio {
     color : var(--NAVY-BLUE);
 }
-
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
 
 .nav-link {
 color: var(--NAVY-BLUE);
@@ -71,13 +91,25 @@ color: var(--NAVY-BLUE);
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding: 24px 0;
 }
 .nav-link:hover,.nav-link:focus {
     color: var(--OCEAN);
 }
 
+.addres-list {
+    display: flex;
+    gap: 40px;
+}
+
+/* hiro-section */
 .hiro-section {
     background-color: var(--NAVY-BLUE);
+    padding: 188px 0;
+}
+
+.container-hiro {
+
 }
 
 .hiro-title {
@@ -86,6 +118,7 @@ color: var(--NAVY-BLUE);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--WHITE);
+    max-width: 496px;
 }
 .hiro-button {
     background-color: var(--IRIS);
@@ -94,30 +127,57 @@ color: var(--NAVY-BLUE);
     letter-spacing: 0.04em;
     color: var(--WHITE);
     cursor: pointer;
+    display: block;
+    display: block;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     
 }
 .hiro-button:hover, .hiro-button:focus {
     background-color:var(--OCEAN);
 }
-
 .adres-item {
     font-style: normal;
 }
+
 .adres-emtel {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--SLATE);
     text-decoration: none;
 }
-.adres-emtel:hover, .adres-emtel:focus {
-color: var(--OCEAN);
+
+.adres-emtel:hover,
+.adres-emtel:focus {
+    color: var(--OCEAN);
 }
+
+/* section h */
+.section-h {
+padding: 120px 0;
+}
+
+.sicret-text {
+    visibility: hidden;
+}
+
+.section-h-ul {
+    display: flex;
+    gap: 24px;
+}
+
+.section-h-li {
+    width: calc((100% - 72px) / 4);
+}
+
 .section-h-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE);
+    margin-bottom: 8px;
 }
 .section-h-text {
     line-height: 1.5;
